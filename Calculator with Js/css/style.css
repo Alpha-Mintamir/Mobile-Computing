@@ -1,0 +1,72 @@
+/* Main stylesheet */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f9;
+  }
+  
+  .container {
+    width: 400px;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .display {
+    background: #ebebeb;
+    padding: 10px;
+    text-align: right;
+  }
+  
+  .display input {
+    width: 100%;
+    border: none;
+    background: none;
+    font-size: 1.5em;
+    color: #666;
+    text-align: right;
+  }
+  
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+  }
+  
+  .button {
+    background: #fff;
+    padding: 20px 0;
+    text-align: center;
+    cursor: pointer;
+    font-size: 1.2em;
+    color: #333;
+    user-select: none;
+  }
+  
+  .button:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .operator, .clear {
+    color: #d35400;
+  }
+  
+  .operator:hover, .clear:hover {
+    background-color: #f39c12;
+    color: white;
+  }
+  
+  .equal {
+    grid-column: span 2;
+    background-color: #27ae60;
+    color: white;
+  }
+  
+  .equal:hover {
+    background-color: #2ecc71;
+  }
+  
